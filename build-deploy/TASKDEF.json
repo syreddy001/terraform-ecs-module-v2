@@ -1,0 +1,16 @@
+{
+  "family": "nginx",
+  "containerDefinitions": [
+    {
+      "name": "nginx",
+      "image": "160692692427.dkr.ecr.us-east-1.amazonaws.com/hello-world:latest",
+      "memory": 128,
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  ]
+}

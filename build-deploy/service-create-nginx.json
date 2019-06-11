@@ -1,0 +1,18 @@
+{
+    "cluster": "dev",
+    "serviceName": "nginx",
+    "taskDefinition": "@@TASKDEFINITION_ARN@@",
+    "loadBalancers": [
+        {
+            "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:160692692427:targetgroup/dev-dev-default/a946debc357cdd2e",
+            "containerName": "nginx",
+            "containerPort": 80
+        }
+    ],
+    "desiredCount": 2,
+    "role": "/ecs/dev_ecs_lb_role",
+    "deploymentConfiguration": {
+        "maximumPercent": 100,
+        "minimumHealthyPercent": 0
+    }
+}

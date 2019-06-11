@@ -1,0 +1,10 @@
+{
+    "cluster": "dev",
+    "service": "nginx",
+    "taskDefinition": "@@TASKDEFINITION_ARN@@",
+    "desiredCount": 2,
+    "deploymentConfiguration": {
+        "maximumPercent": 100,
+        "minimumHealthyPercent": 0
+    }
+}
